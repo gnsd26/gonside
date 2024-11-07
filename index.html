@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>gonside</title>
+    <link rel="shortcut icon" href="assets/14_.jpg" type="image/x-icon">
+</head>
+
+<body>
+    <audio id="audio" autoplay loop hidden>
+        <source src="assets/прохладой вечера - Жить.mp3" type="audio/mpeg">
+        Ваш браузер не поддерживает аудиотег.
+    </audio>
+
+    <div class="volume-controls">
+        <button id="volumeDown">-</button>
+        <button id="volumeUp">+</button>
+    </div>
+    <div id="volumeInfo" class="volume-info"></div>
+
+    <video autoplay loop muted playsinline id="background-video">
+        <source src="assets/2131.mp4" type="video/mp4">
+    </video>
+    <div class="container">
+        <a href="https://steamcommunity.com/id/gonside/" target="_blank">
+            <div class="avatar"></div>
+        </a>
+        <h1>gonside</h1>
+        <p class="description">
+            In shadows’ embrace, a heartache resides,<br>
+            Whispering sorrows, where hope subsides.<br>
+            Aching echoes of love’s shattered dream,<br>
+            A tear-stained canvas, a melancholy theme.<br>
+            <br>
+            Through tearful nights, I seek solace anew,<br>
+            Yearning for solace, a glimmer so true.<br>
+            But sadness persists, its grip ever tight,<br>
+            A haunting reminder of joy’s fleeting light.
+        </p>
+
+        <div class="link-buttons">
+            <a href="https://t.me/gonside_ae" target="_blank" class="link">
+                <img src="assets/free-icon-telegram-4701496.png" alt="Telegram"> Telegram
+            </a>
+            <a href="https://www.youtube.com/channel/UCj7eUnQSkO8nn0sm9kMpEcg" target="_blank" class="link">
+                <img src="assets/free-icon-youtube-152810.png" alt="YouTube"> YouTube
+            </a>
+            <a href="https://www.twitch.tv/gonsidee" target="_blank" class="link">
+                <img src="assets/free-icon-twitch-4926627.png" alt="Twitch"> Twitch
+            </a>
+        </div>
+        <div class="divider-container">
+        </div>
+        <div class="footer-links">
+            <a href="https://discord.gg/QyxSZju4c6" target="_blank">Discord</a>
+            <span>•</span>
+            <a href="https://steamcommunity.com/id/gonside/" target="_blank">@gonside</a>
+        </div>
+    </div>
+    <label class="toggle-switch">
+        Фон видео
+        <input type="checkbox" id="videoToggle" onchange="toggleVideo()">
+        <span class="slider"></span>
+    </label>
+    <script src="back.js"></script>
+</body>
+
+</html>
